@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e45645b5c6adf619df0358c54390a0d3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e45645b5c6adf619df0358c54390a0d3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e45645b5c6adf619df0358c54390a0d3 = L.map(
+                "map_e45645b5c6adf619df0358c54390a0d3",
+                {
+                    center: [24.7893998979595, 120.9911943174875],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_daca67335ef0c85fb2a46ea025e72fe8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_daca67335ef0c85fb2a46ea025e72fe8.addTo(map_e45645b5c6adf619df0358c54390a0d3);
+        
+    
+            var marker_920f5e3fccd667a740bf91567367781e = L.marker(
+                [24.7922699506788, 120.99405501126],
+                {}
+            ).addTo(map_e45645b5c6adf619df0358c54390a0d3);
+        
+    
+        var popup_f04d8dc304cc4676fc0cbad49b9944f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7584240e022d132ec33458ccfdf2e4be = $(`<div id="html_7584240e022d132ec33458ccfdf2e4be" style="width: 100.0%; height: 100.0%;"><b>水木取物站 (跨領域)</b><br><a href='https://docs.google.com/spreadsheets/d/1nY2PNT7ipibPETe-lS_PDbJMT699Ps3-wFogkKlY4xE/edit?gid=0#gid=0' target='_blank'>書目資訊</a></div>`)[0];
+                popup_f04d8dc304cc4676fc0cbad49b9944f9.setContent(html_7584240e022d132ec33458ccfdf2e4be);
+            
+        
+
+        marker_920f5e3fccd667a740bf91567367781e.bindPopup(popup_f04d8dc304cc4676fc0cbad49b9944f9)
+        ;
+
+        
+    
+    
+            marker_920f5e3fccd667a740bf91567367781e.bindTooltip(
+                `<div>
+                     水木取物站
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77c2992387ca8b36e4a0d16d9a91d320 = L.marker(
+                [24.7865298452402, 120.988333623715],
+                {}
+            ).addTo(map_e45645b5c6adf619df0358c54390a0d3);
+        
+    
+        var popup_f36071a668437d3b3ce41d4a5f1ff174 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f33530866967791bddb445b637f56ca5 = $(`<div id="html_f33530866967791bddb445b637f56ca5" style="width: 100.0%; height: 100.0%;"><b>台積館福門 (跨領域)</b><br><a href='https://docs.google.com/spreadsheets/d/1nY2PNT7ipibPETe-lS_PDbJMT699Ps3-wFogkKlY4xE/edit?gid=341481304#gid=341481304' target='_blank'>書目資訊</a></div>`)[0];
+                popup_f36071a668437d3b3ce41d4a5f1ff174.setContent(html_f33530866967791bddb445b637f56ca5);
+            
+        
+
+        marker_77c2992387ca8b36e4a0d16d9a91d320.bindPopup(popup_f36071a668437d3b3ce41d4a5f1ff174)
+        ;
+
+        
+    
+    
+            marker_77c2992387ca8b36e4a0d16d9a91d320.bindTooltip(
+                `<div>
+                     台積館福門
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
