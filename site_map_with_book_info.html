@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5e63109eec092d3a0e7ff080c56f69fa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5e63109eec092d3a0e7ff080c56f69fa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5e63109eec092d3a0e7ff080c56f69fa = L.map(
+                "map_5e63109eec092d3a0e7ff080c56f69fa",
+                {
+                    center: [24.820355627692308, 121.08770369230768],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2c0656539cabb22fade9044a3b46bb2a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2c0656539cabb22fade9044a3b46bb2a.addTo(map_5e63109eec092d3a0e7ff080c56f69fa);
+        
+    
+            var marker_b770c728c80be975cf7b56421c8b4d4c = L.marker(
+                [24.79226995, 120.994055],
+                {
+}
+            ).addTo(map_5e63109eec092d3a0e7ff080c56f69fa);
+        
+    
+            var icon_15b5248757efcf09f0264e86bb5d9650 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17dc8c3a25d9391128150252be8f7624 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_93c3914c0e27fb665ecf1dea0dc1fec3 = $(`<div id="html_93c3914c0e27fb665ecf1dea0dc1fec3" style="width: 100.0%; height: 100.0%;"><b>十里方圓水木站 (TWN-0001)</b><br>站點地址: 新竹市東區光復路二段101號水木餐廳<br><a href='https://drive.google.com/file/d/170BvjuNMxUqlKqIAaDmrWvrHr7SVzWmP/view?usp=drive_link' target='_blank'>站點圖片</a></div>`)[0];
+                popup_17dc8c3a25d9391128150252be8f7624.setContent(html_93c3914c0e27fb665ecf1dea0dc1fec3);
+            
+        
+
+        marker_b770c728c80be975cf7b56421c8b4d4c.bindPopup(popup_17dc8c3a25d9391128150252be8f7624)
+        ;
+
+        
+    
+    
+            marker_b770c728c80be975cf7b56421c8b4d4c.bindTooltip(
+                `<div>
+                     十里方圓水木站
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b770c728c80be975cf7b56421c8b4d4c.setIcon(icon_15b5248757efcf09f0264e86bb5d9650);
+            
+    
+            var marker_40bcd9781b03757f4fef7c1965163483 = L.marker(
+                [24.78652985, 120.9883336],
+                {
+}
+            ).addTo(map_5e63109eec092d3a0e7ff080c56f69fa);
+        
+    
+            var icon_607fe49223d1c8d4c7cea7339b4681fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e460c192b69ad6149b4dcb6398d18ecf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7f18a527c29d518c52e18774b94f3243 = $(`<div id="html_7f18a527c29d518c52e18774b94f3243" style="width: 100.0%; height: 100.0%;"><b>台積館8樓福門站 (TWN-0002)</b><br>站點地址: 新竹市東區光復路二段101號台積館8樓<br><a href='https://drive.google.com/file/d/1_gyZBiYvSsaB9o-Sd-IrUlLZdyi3yfW-/view?usp=drive_link' target='_blank'>站點圖片</a></div>`)[0];
+                popup_e460c192b69ad6149b4dcb6398d18ecf.setContent(html_7f18a527c29d518c52e18774b94f3243);
+            
+        
+
+        marker_40bcd9781b03757f4fef7c1965163483.bindPopup(popup_e460c192b69ad6149b4dcb6398d18ecf)
+        ;
+
+        
+    
+    
+            marker_40bcd9781b03757f4fef7c1965163483.bindTooltip(
+                `<div>
+                     台積館8樓福門站
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_40bcd9781b03757f4fef7c1965163483.setIcon(icon_607fe49223d1c8d4c7cea7339b4681fa);
+            
+    
+            var marker_4a71bae024960351b5683885661d4523 = L.marker(
+                [24.79568215, 120.9937979],
+                {
+}
+            ).addTo(map_5e63109eec092d3a0e7ff080c56f69fa);
+        
+    
+            var icon_e08a623acb67955ecc28b386ae5349ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_23e210e9cf36d52edf8839dfbb56b971 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_05a9da9f9d02cc8ba5cec3cf7316f5df = $(`<div id="html_05a9da9f9d02cc8ba5cec3cf7316f5df" style="width: 100.0%; height: 100.0%;"><b>清大教育館1樓 (TWN-0003)</b><br>站點地址: 新竹市東區光復路二段101號教育館<br><a href='https://drive.google.com/file/d/1QjVil1-4un4PXmiTE5bgDzMC6x-MM3sF/view?usp=drive_link' target='_blank'>站點圖片</a></div>`)[0];
+                popup_23e210e9cf36d52edf8839dfbb56b971.setContent(html_05a9da9f9d02cc8ba5cec3cf7316f5df);
+            
+        
+
+        marker_4a71bae024960351b5683885661d4523.bindPopup(popup_23e210e9cf36d52edf8839dfbb56b971)
+        ;
+
+        
+    
+    
+            marker_4a71bae024960351b5683885661d4523.bindTooltip(
+                `<div>
+                     清大教育館1樓
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4a71bae024960351b5683885661d4523.setIcon(icon_e08a623acb67955ecc28b386ae5349ce);
+            
+    
+            var marker_cdbac0564e09e95fd7b9bdc2bead235e = L.marker(
+                [24.79234393, 120.9946381],
+                {
+}
+            ).addTo(map_5e63109eec092d3a0e7ff080c56f69fa);
+        
+    
+            var icon_cc22450b4e82d8b5e72b245a7848e7dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_af81b7e3686a7a0d2ad70aedc1f423a8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d0dd6628a4285785adb2000584047041 = $(`<div id="html_d0dd6628a4285785adb2000584047041" style="width: 100.0%; height: 100.0%;"><b>風雲水木書苑站 (TWN-0004)</b><br>站點地址: 新竹市東區光復路二段101號風雲樓<br><a href='https://drive.google.com/file/d/1hQyDg1inTLRjJfdr1h2uLAlTOv73eKBy/view?usp=drive_link' target='_blank'>站點圖片</a></div>`)[0];
+                popup_af81b7e3686a7a0d2ad70aedc1f423a8.setContent(html_d0dd6628a4285785adb2000584047041);
+            
+        
+
+        marker_cdbac0564e09e95fd7b9bdc2bead235e.bindPopup(popup_af81b7e3686a7a0d2ad70aedc1f423a8)
+        ;
+
+        
+    
+    
+            marker_cdbac0564e09e95fd7b9bdc2bead235e.bindTooltip(
+                `<div>
+                     風雲水木書苑站
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cdbac0564e09e95fd7b9bdc2bead235e.setIcon(icon_cc22450b4e82d8b5e72b245a7848e7dd);
+            
+    
+            var marker_a1edfcba5a90baca5c6b222eecf3f0a5 = L.marker(
+                [24.79530743, 121.0030449],
+                {
+}
+            ).addTo(map_5e63109eec092d3a0e7ff080c56f69fa);
+        
+    
+            var icon_8d5222c0b1715bc4783a00915444061a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6204b14bbdc2d92ecaf05569ac3b4403 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2f9d72a10e9cc7d7cb00e5fe1617fb4c = $(`<div id="html_2f9d72a10e9cc7d7cb00e5fe1617fb4c" style="width: 100.0%; height: 100.0%;"><b>金城一路71巷站 (TWN-0005)</b><br>站點地址: 300新竹市東區金城一路71巷11號N棟<br><a href='https://drive.google.com/file/d/1gARrwg8xqeMNKjL4TDVwSCrfjcT4KZkp/view?usp=drive_link' target='_blank'>站點圖片</a></div>`)[0];
+                popup_6204b14bbdc2d92ecaf05569ac3b4403.setContent(html_2f9d72a10e9cc7d7cb00e5fe1617fb4c);
+            
+        
+
+        marker_a1edfcba5a90baca5c6b222eecf3f0a5.bindPopup(popup_6204b14bbdc2d92ecaf05569ac3b4403)
+        ;
+
+        
+    
+    
+            marker_a1edfcba5a90baca5c6b222eecf3f0a5.bindTooltip(
+                `<div>
+                     金城一路71巷站
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a1edfcba5a90baca5c6b222eecf3f0a5.setIcon(icon_8d5222c0b1715bc4783a00915444061a);
+            
+    
+            var marker_8520f4766ec1d30c416674e17c1bbfac = L.marker(
+                [25.05838189, 121.5096854],
+                {
+}
+            ).addTo(map_5e63109eec092d3a0e7ff080c56f69fa);
+        
+    
+            var icon_276e6340b1d2abaeeb473b36efa51b21 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_32b94797bba27ede164afbee414e2df2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_552a20f39831c4c3d4caa97bec1e43b6 = $(`<div id="html_552a20f39831c4c3d4caa97bec1e43b6" style="width: 100.0%; height: 100.0%;"><b>貝殼好室閱悅站 (TWN-0006)</b><br>站點地址: 103台北市大同區迪化街一段155號貝殼好室之閱悅門市<br><a href='https://drive.google.com/file/d/126uNdnoaa26ak4m-WOHCoCVcdZnA239j/view?usp=drive_link' target='_blank'>站點圖片</a></div>`)[0];
+                popup_32b94797bba27ede164afbee414e2df2.setContent(html_552a20f39831c4c3d4caa97bec1e43b6);
+            
+        
+
+        marker_8520f4766ec1d30c416674e17c1bbfac.bindPopup(popup_32b94797bba27ede164afbee414e2df2)
+        ;
+
+        
+    
+    
+            marker_8520f4766ec1d30c416674e17c1bbfac.bindTooltip(
+                `<div>
+                     貝殼好室閱悅站
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8520f4766ec1d30c416674e17c1bbfac.setIcon(icon_276e6340b1d2abaeeb473b36efa51b21);
+            
+    
+            var marker_6c68537bbb78a4d1f7795a9f13b4aa93 = L.marker(
+                [24.70078671, 121.0546984],
+                {
+}
+            ).addTo(map_5e63109eec092d3a0e7ff080c56f69fa);
+        
+    
+            var icon_1a43c610e23ef394d072f53de893fb05 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e9922284e7a703f76f43c6c8624f37c5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c8809fe42a9496b23666dc598784e9ce = $(`<div id="html_c8809fe42a9496b23666dc598784e9ce" style="width: 100.0%; height: 100.0%;"><b>北埔青空間 (TWN-0007)</b><br>站點地址: 新竹縣北埔鄉中正路74號<br><a href='https://drive.google.com/file/d/1WCJ16G4VZ-ZLKTulgTrYF-6xKG0-dH7h/view?usp=sharing' target='_blank'>站點圖片</a></div>`)[0];
+                popup_e9922284e7a703f76f43c6c8624f37c5.setContent(html_c8809fe42a9496b23666dc598784e9ce);
+            
+        
+
+        marker_6c68537bbb78a4d1f7795a9f13b4aa93.bindPopup(popup_e9922284e7a703f76f43c6c8624f37c5)
+        ;
+
+        
+    
+    
+            marker_6c68537bbb78a4d1f7795a9f13b4aa93.bindTooltip(
+                `<div>
+                     北埔青空間
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6c68537bbb78a4d1f7795a9f13b4aa93.setIcon(icon_1a43c610e23ef394d072f53de893fb05);
+            
+    
+            var marker_19b97f6b379100597dce95257ccc5ce8 = L.marker(
+                [25.000415, 121.5076955],
+                {
+}
+            ).addTo(map_5e63109eec092d3a0e7ff080c56f69fa);
+        
+    
+            var icon_d96f8860f6a6fc755e9062e55e3c8a52 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_387c4c9dc1660bcda5789882a681b2ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cdbfca1afa628e790046a50f71607a59 = $(`<div id="html_cdbfca1afa628e790046a50f71607a59" style="width: 100.0%; height: 100.0%;"><b>采虹音樂小集工作室 (TWN-0008)</b><br>站點地址: 新北市永和區中和路335巷18弄5號1樓<br><a href='https://drive.google.com/file/d/1sUVFcuUd-vpFb1x7_x5WeW5h7dR9bKDA/view?usp=drive_link' target='_blank'>站點圖片</a></div>`)[0];
+                popup_387c4c9dc1660bcda5789882a681b2ef.setContent(html_cdbfca1afa628e790046a50f71607a59);
+            
+        
+
+        marker_19b97f6b379100597dce95257ccc5ce8.bindPopup(popup_387c4c9dc1660bcda5789882a681b2ef)
+        ;
+
+        
+    
+    
+            marker_19b97f6b379100597dce95257ccc5ce8.bindTooltip(
+                `<div>
+                     采虹音樂小集工作室
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_19b97f6b379100597dce95257ccc5ce8.setIcon(icon_d96f8860f6a6fc755e9062e55e3c8a52);
+            
+    
+            var marker_5121d898710d82f7389032962af11659 = L.marker(
+                [24.83831372, 120.9996575],
+                {
+}
+            ).addTo(map_5e63109eec092d3a0e7ff080c56f69fa);
+        
+    
+            var icon_4739bc575e2685f45f7e86d24a9aa990 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8428445d4d523c9a057ecdb38b9aec66 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_30c3a0465740621bad7b80576272ddc9 = $(`<div id="html_30c3a0465740621bad7b80576272ddc9" style="width: 100.0%; height: 100.0%;"><b>紙花書屋 (TWN-0009)</b><br>站點地址: 302新竹縣竹北市新光街201巷11號<br><a href='https://drive.google.com/file/d/1aGsDTxdPE2XO78zMhoyxoEzC_P99XuJJ/view?usp=drive_link' target='_blank'>站點圖片</a></div>`)[0];
+                popup_8428445d4d523c9a057ecdb38b9aec66.setContent(html_30c3a0465740621bad7b80576272ddc9);
+            
+        
+
+        marker_5121d898710d82f7389032962af11659.bindPopup(popup_8428445d4d523c9a057ecdb38b9aec66)
+        ;
+
+        
+    
+    
+            marker_5121d898710d82f7389032962af11659.bindTooltip(
+                `<div>
+                     紙花書屋
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5121d898710d82f7389032962af11659.setIcon(icon_4739bc575e2685f45f7e86d24a9aa990);
+            
+    
+            var marker_be6d2d814414dbd1e0f88b07c7232b50 = L.marker(
+                [24.79582992, 120.9949267],
+                {
+}
+            ).addTo(map_5e63109eec092d3a0e7ff080c56f69fa);
+        
+    
+            var icon_fa55dc855169c907b0c4b72b6a4e9940 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d20346d7937beaa64efcfc549112154f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_906458fa2a5a5471748dc440658e0dbc = $(`<div id="html_906458fa2a5a5471748dc440658e0dbc" style="width: 100.0%; height: 100.0%;"><b>國立清華大學圖書館好書共享站 (TWN-0010)</b><br>站點地址: 清華大學旺宏館一樓<br><a href='https://drive.google.com/file/d/1Vqf_M2BZ9H05uIXVB60mW6V1yuACuCfX/view?usp=sharing' target='_blank'>站點圖片</a></div>`)[0];
+                popup_d20346d7937beaa64efcfc549112154f.setContent(html_906458fa2a5a5471748dc440658e0dbc);
+            
+        
+
+        marker_be6d2d814414dbd1e0f88b07c7232b50.bindPopup(popup_d20346d7937beaa64efcfc549112154f)
+        ;
+
+        
+    
+    
+            marker_be6d2d814414dbd1e0f88b07c7232b50.bindTooltip(
+                `<div>
+                     國立清華大學圖書館好書共享站
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_be6d2d814414dbd1e0f88b07c7232b50.setIcon(icon_fa55dc855169c907b0c4b72b6a4e9940);
+            
+    
+            var marker_9f1e2d3dc20293d8137407fea05f1825 = L.marker(
+                [24.78663791, 120.9880508],
+                {
+}
+            ).addTo(map_5e63109eec092d3a0e7ff080c56f69fa);
+        
+    
+            var icon_535eb33e122c736b95556866e4216331 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8a97f85ad1aa092833b9ccc8ef7dfe01 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0914899df1ec79533b858609061b5eb6 = $(`<div id="html_0914899df1ec79533b858609061b5eb6" style="width: 100.0%; height: 100.0%;"><b>台積館漂書站 (TWN-0011)</b><br>站點地址: 清華大學台積館<br><a href='#11，台積館漂書站照片.jpg' target='_blank'>站點圖片</a></div>`)[0];
+                popup_8a97f85ad1aa092833b9ccc8ef7dfe01.setContent(html_0914899df1ec79533b858609061b5eb6);
+            
+        
+
+        marker_9f1e2d3dc20293d8137407fea05f1825.bindPopup(popup_8a97f85ad1aa092833b9ccc8ef7dfe01)
+        ;
+
+        
+    
+    
+            marker_9f1e2d3dc20293d8137407fea05f1825.bindTooltip(
+                `<div>
+                     台積館漂書站
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9f1e2d3dc20293d8137407fea05f1825.setIcon(icon_535eb33e122c736b95556866e4216331);
+            
+    
+            var marker_c13128f3dfe6f679931427e94e69eca4 = L.marker(
+                [24.80544907, 120.9711706],
+                {
+}
+            ).addTo(map_5e63109eec092d3a0e7ff080c56f69fa);
+        
+    
+            var icon_9a54a5e99ef13448bc60e70f233abf90 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9939e5e3ca2fa51625941d41a3242c20 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b4a3df9d849cc90051db0d4c8473a15f = $(`<div id="html_b4a3df9d849cc90051db0d4c8473a15f" style="width: 100.0%; height: 100.0%;"><b>百年香遇漂書站 (TWN-0012)</b><br>站點地址: 臺灣新竹市東區文化街8號（星巴克新竹州圖店）<br><a href='#12百年香遇漂書站1.jpeg' target='_blank'>站點圖片</a></div>`)[0];
+                popup_9939e5e3ca2fa51625941d41a3242c20.setContent(html_b4a3df9d849cc90051db0d4c8473a15f);
+            
+        
+
+        marker_c13128f3dfe6f679931427e94e69eca4.bindPopup(popup_9939e5e3ca2fa51625941d41a3242c20)
+        ;
+
+        
+    
+    
+            marker_c13128f3dfe6f679931427e94e69eca4.bindTooltip(
+                `<div>
+                     百年香遇漂書站
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c13128f3dfe6f679931427e94e69eca4.setIcon(icon_9a54a5e99ef13448bc60e70f233abf90);
+            
+    
+            var marker_9a494a53cd7bfda516d85e60be846b03 = L.marker(
+                [24.71667563, 121.1403936],
+                {
+}
+            ).addTo(map_5e63109eec092d3a0e7ff080c56f69fa);
+        
+    
+            var icon_3c185b34129962f829fd0c03c442c2c7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7144736b18aea4a4743d4cef747a7a90 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8fa738a524ef8906da6656be8ad56804 = $(`<div id="html_8fa738a524ef8906da6656be8ad56804" style="width: 100.0%; height: 100.0%;"><b>穀倉漂書站 (TWN-0013)</b><br>站點地址: 新竹縣橫山河堤大道8號旁<br><a href='#13穀倉漂書站.jpg' target='_blank'>站點圖片</a></div>`)[0];
+                popup_7144736b18aea4a4743d4cef747a7a90.setContent(html_8fa738a524ef8906da6656be8ad56804);
+            
+        
+
+        marker_9a494a53cd7bfda516d85e60be846b03.bindPopup(popup_7144736b18aea4a4743d4cef747a7a90)
+        ;
+
+        
+    
+    
+            marker_9a494a53cd7bfda516d85e60be846b03.bindTooltip(
+                `<div>
+                     穀倉漂書站
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9a494a53cd7bfda516d85e60be846b03.setIcon(icon_3c185b34129962f829fd0c03c442c2c7);
+            
+</script>
+</html>
